@@ -33,3 +33,6 @@ def dicts():
 
 dicts()
 
+def lists():
+    p = [('a',1), ('b',2), ('c',3)]
+    letter, numbers =  zip(*p)

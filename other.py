@@ -47,5 +47,6 @@ def add(n):
 
 m = map(add,numbers)
 
-print(list(m))
+# print(list(m))
+
 

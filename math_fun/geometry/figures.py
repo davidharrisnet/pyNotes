@@ -17,11 +17,19 @@ class Line:
          xd = self.pointOne.x - self.pointTwo.x
          yd = self.pointOne.y = self.pointTwo.y
 
-         return math.sqrt(math.pow(xd,2) + math.pow(yd,2))
+class Polygon:
+    def __init__(self, *points):
+        self.sides = []
+        for point in points:
+            self.sides.append(point)
 
-p1 = Point(1,2)
-p2 = Point(2,30)
+    def __str__(self):
+        return str(self.sides)
 
-l = Line(p1,p2)
 
-print(l.distance())
+p = Point(1,2)
+p2 = Point(2,3)
+p3 = Point(3,4)
+
+ply = Polygon(p,p2,p3)
+print(ply)
