@@ -31,8 +31,26 @@ def dicts():
     }
     print(dict)
 
-dicts()
+# dicts()
 
 def lists():
     p = [('a',1), ('b',2), ('c',3)]
     letter, numbers =  zip(*p)
+
+
+
+
+x = 2;
+
+def changeX():
+    x = 4
+
+def changeX2():
+    global x
+    x = 5
+
+
+changeX()
+print(x)
+changeX2()
+print(x)

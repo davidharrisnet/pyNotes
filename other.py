@@ -49,4 +49,22 @@ m = map(add,numbers)
 
 # print(list(m))
 
+def double(x):
+    return x * 2
+
+d = double
+
+print(d(11))
+
+
+def maker(N):
+    return lambda Z: Z ** N
+
+h = maker(2)
+
+print(h(3))
+
+y = (2 * 3)
+
+print(y())
 
